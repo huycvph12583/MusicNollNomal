@@ -2,16 +2,13 @@ package com.example.musicnoll
 
 import android.os.Bundle
 import android.view.View
-import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.WindowCompat
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.musicnoll.databinding.ActivityMainBinding
-
 
 class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -32,7 +29,12 @@ class MainActivity : AppCompatActivity() {
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
                 R.id.navigationActivityView -> {
-                    window.addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
+//                    window.addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
+                    binding.toolbar.visibility = View.GONE
+                }
+
+                R.id.loginActivity -> {
+//                window.addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
                     binding.toolbar.visibility = View.GONE
                 }
             }

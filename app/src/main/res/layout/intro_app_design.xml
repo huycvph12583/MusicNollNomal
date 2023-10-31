@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
-
-    </data>
+    <data></data>
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -27,22 +26,25 @@
             android:id="@+id/intro_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textColor="@android:color/black"
-            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:gravity="start"
+            android:textSize="20sp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/pinkFC5185"
+            android:textStyle="bold"
             tools:text="@tools:sample/lorem" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/intro_description"
+            android:gravity="start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            tools:text="@tools:sample/lorem/random"
+            android:ellipsize="end"
             android:maxLines="3"
-            android:ellipsize="end" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            tools:text="@tools:sample/lorem/random" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 </layout>
