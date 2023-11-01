@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">MusicNoll</string>
     <string name="title_activity_login">LoginActivity</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
+    <string name="prompt_email">Enter the email</string>
+    <string name="prompt_password">Enter the Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome !"</string>
@@ -82,4 +82,8 @@
     <string name="tab1">Tab 1</string>
     <string name="tab2">Tab 2</string>
     <string name="tab3">Tab 3</string>
+    <string name="lister_music_login">Lister Music \n Login</string>
+    <string name="byChecking">By checking the box to save the account.</string>
+    <string name="mPassword">Password</string>
+    <string name="email">Email</string>
 </resources>
